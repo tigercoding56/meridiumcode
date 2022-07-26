@@ -212,12 +212,12 @@ def interpretItem(project, item, lua):
 		else:
 			lua.set_string("inventory_image", project.modname + "_" + item.get("name").value + ".png")
 
-	eaten = item.get("eaten")
+	eaten = item.get("eatable")
 	if eaten is not None:
 		project.requires_eat = True
 		lua.set("on_use", "item_eat(" + eaten.value + ")")
 
-	groups = item.get("is")
+	groups = item.get("groups")
 	if groups is not None:
 		for group in groups.as_list():
 			if group == "ground":
