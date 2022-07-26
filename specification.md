@@ -8,7 +8,7 @@ Here is the definition of default:stone:
 mod default
 
 node Stone
-	is ground, cracky, stone
+	groups ground, cracky, stone
 	drops Cobble
 ```
 
@@ -43,7 +43,7 @@ mod some_foods
 
 node Milk Chocolate Bar
 	name chocolate_milk
-	eaten 2
+	eatable 2
 ```
 
 Lists
@@ -54,13 +54,13 @@ These two code snippets do exactly the same thing:
 
 ```
 node test
-	is one, two, three
+	groups one, two, three
 ```
 
 
 ```
 node test
-	is
+	groups
 		one
 		two
 		three
@@ -75,7 +75,7 @@ mod compass
 
 node Compass
 	tiles 6x
-	is cracky, oddly_breakable_by_hand
+	groups cracky, oddly_breakable_by_hand
 ```
 
 Allows compass_compass_top.png, compass_compass_left.png, compass_compass_back.png, etc to be used.
