@@ -39,6 +39,7 @@ Installation  (root version)
 rm -rf .local/share/applications/meridiumcode
 cd .local/share/applications/
 git clone https://github.com/tigercoding56/meridiumcode.git
+cd meridiumcode
 sudo make install
 
 ```
@@ -47,9 +48,9 @@ Installation  (non-root-version)
 -----
 ```
 rm -rf .local/share/applications/meridiumcode
-mkdir .local/share/applications/meridiumcode
-cd .local/share/applications/meridiumcode
+cd .local/share/applications/
 git clone https://github.com/tigercoding56/meridiumcode.git
+cd meridiumcode
 install -m 0755 mesecode.py  ~/.local/bin/
 
 ```
