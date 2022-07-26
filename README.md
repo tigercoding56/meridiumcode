@@ -10,11 +10,11 @@ Created by rubenwardy, license: GPL 3.0 or later
 mod candy_gem
 
 craftitem Candy Gem
-  is food=2
-  eaten 5
+  groups food=2
+  eatable 5
 
 node Candy Gen in Stone
-  is ground, cracky
+  groups ground, cracky
   drops Candy Gem
 
 script script_one.lua
