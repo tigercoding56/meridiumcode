@@ -54,3 +54,9 @@ cd meridiumcode
 install -m 0755 mesecode.py  ~/.local/bin/
 
 ```
+
+running 
+------
+```
+python2 mesecode.py
+```
