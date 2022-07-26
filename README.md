@@ -32,3 +32,25 @@ $ mesecode.py path/to/file.mese output/directory
 # or portable version
 $ python mesecode.py path/to/file.mese output/directory
 ```
+
+Installation  (root version)
+-----
+```
+rm -rf .local/share/applications/meridiumcode
+mkdir .local/share/applications/meridiumcode
+cd .local/share/applications/meridiumcode
+git clone https://github.com/tigercoding56/meridiumcode.git
+sudo make install
+
+```
+
+Installation  (non-root-version)
+-----
+```
+rm -rf .local/share/applications/meridiumcode
+mkdir .local/share/applications/meridiumcode
+cd .local/share/applications/meridiumcode
+git clone https://github.com/tigercoding56/meridiumcode.git
+install -m 0755 mesecode.py  ~/.local/bin/
+
+```
